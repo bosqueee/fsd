@@ -1,31 +1,14 @@
 {
-  "functions": {
-    "api/*.php": {
-      "runtime": "vercel-php@0.6.1"
-    },
-
-
-
-    "api/index.php": {
-      "runtime": "vercel-php@0.6.1"
-    },
-    "api/hedader.php": {
-      "runtime": "vercel-php@0.6.1"
-    },
-    "api/menu.php": {
-      "runtime": "vercel-php@0.6.1"
-    },
-    "api/view.php": {
-      "runtime": "vercel-php@0.6.1"
-    },
-    "api/news/index.php": {
-      "runtime": "vercel-php@0.6.1"
-    },
-    "api/news/view.php": {
-      "runtime": "vercel-php@0.6.1"
-    },
-    "api/news/contoh.php": {
-      "runtime": "vercel-php@0.6.1"
+  "builds": [
+    { "src": "index.php", "use": "vercel-php@0.3.1" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)",  "dest": "/api/index.php" }
+  ],
+  "build": {
+    "env": {
+      "NOW_PHP_DEBUG": "1",
+      "COMPOSER_AUTH": "@github-satis"
     }
   }
 }
