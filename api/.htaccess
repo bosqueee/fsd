@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Pengecualian untuk index.php, footer.php, header.php, dan menu.php
+RewriteRule ^(index|footer|header|menu)\.php$ - [L]
+
+
+
+# Rewrite untuk semua URL dengan pola umum
+RewriteRule ^([a-zA-Z0-9_-]+)$ view.php?url=$1 [L]
+

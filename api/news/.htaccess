@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Rewrite untuk /modul-sampah-plastik-[angka]
+RewriteRule ^modul-sampah-plastik-(\d+)$ view.php?url=modul-sampah-plastik-$1 [L]
+
+# Rewrite untuk /news/ + pola
+RewriteRule ^news/([^/]+)$ news/view.php?url=$1 [L]
+
+# Rewrite untuk semua URL dengan pola umum
+RewriteRule ^([a-zA-Z0-9_-]+)$ view.php?url=$1 [L]

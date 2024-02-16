@@ -1,0 +1,31 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.6.1"
+    },
+
+
+
+    "api/index.php": {
+      "runtime": "vercel-php@0.6.1"
+    },
+    "api/hedader.php": {
+      "runtime": "vercel-php@0.6.1"
+    },
+    "api/menu.php": {
+      "runtime": "vercel-php@0.6.1"
+    },
+    "api/view.php": {
+      "runtime": "vercel-php@0.6.1"
+    },
+    "api/news/index.php": {
+      "runtime": "vercel-php@0.6.1"
+    },
+    "api/news/view.php": {
+      "runtime": "vercel-php@0.6.1"
+    },
+    "api/news/contoh.php": {
+      "runtime": "vercel-php@0.6.1"
+    }
+  }
+}
