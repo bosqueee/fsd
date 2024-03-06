@@ -1,22 +1,7 @@
- 	{
- 		"version": 2,
- 		"public": true,
- 		"functions": {
- 		"api/*.php": {
- 			"runtime": "vercel-php@0.3.5"
- 		}
- 		},
- 		"routes": [
- 		{
- 			"src": "/assets/(.*)",
- 			"headers": {
- 			"cache-control": "s-maxage=604800"
- 			},
- 			"dest": "/assets/$1"
- 		},
- 		{
- 			"src": "/(.*)",
- 			"dest": "api/index.php"
- 		}
- 		]
- 	}
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.0"
+    }
+  }
+}
